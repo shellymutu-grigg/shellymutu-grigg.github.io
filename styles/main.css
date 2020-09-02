@@ -1,7 +1,74 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 body{
-    background: linear-gradient(180deg, #f5e9df, white) no-repeat;
+    background: linear-gradient(180deg, white, #f5e9df) no-repeat;
+}
+h2{
+    padding-bottom: 5%;
+}
+.header{
+    text-align: center;
+    text-emphasis-color: rgb(245, 238, 238);
+    padding-top: 2%;
+    color: rgb(91, 92, 93);
+    background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
+    height: 25%;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 130%;
+    font-weight: bolder;
+    text-shadow: 2px 2px #bfcfd8;
 }
 
-h1{
-    color: blueviolet;
+
+.blog-table{
+    display: flex;
+    flex-flow: row;
+    width: 90%;
+    flex-grow: 1;
+    justify-content: space-around;
 }
+.blog-items{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 15%;
+    height: 15%;
+    margin: 0;
+    background-blend-mode: lighten;
+   }
+  .blog-items a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: rgb(124, 130, 133);
+  }
+  
+  .blog-items a:hover {
+    background:  #b5bec9;
+  }
+  
+  @media all and (max-width: 800px) {
+    .blog-items {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .blog-items {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .blog-items a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .blog-items li:last-of-type a {
+      border-bottom: none;
+    }
+ }  
+ 
