@@ -1,43 +1,71 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*border: 1px solid red;*/
 }
-body{
-    background: linear-gradient(180deg, white, #f5e9df) no-repeat;
+body, html{
+    margin: 0;
+    padding: 0;
 }
-h2{
-    padding-bottom: 5%;
+ body {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    border-radius: 50%;
+    max-width: 30%;
+    width: 80px;
+    height: 60px auto;
+      margin: 0 auto;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom: 0px;
+      margin-left: auto;
+  }
+  ul{
+    list-style-type: none;
+    font-size: 110%;
+    font-weight: bold;
+  }
+
+.container{
+    display: flex block;
+    flex-flow: column;
 }
 .header{
-    text-align: center;
     text-emphasis-color: rgb(245, 238, 238);
-    padding-top: 2%;
-    color: rgb(91, 92, 93);
+    color: rgb(64, 65, 66);
     background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
     height: 25%;
-    background-position: center; /* Center the image */
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 130%;
+    font-size: 110%;
     font-weight: bolder;
-    text-shadow: 2px 2px #bfcfd8;
+    text-shadow: 1px 1px #bfcfd8;
+    text-align: center;
 }
-
+.content {
+    align-items: center;
+    text-align: center;
+  }
 
 .blog-table{
     display: flex;
     flex-flow: row;
     width: 90%;
-    flex-grow: 1;
-    justify-content: space-around;
+    padding-top: 10px;
+    overflow: hidden;
 }
+
 .blog-items{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding-top: 15%;
-    height: 15%;
+    padding-top: 10px;
+    height: 10%;
     margin: 0;
-    background-blend-mode: lighten;
+    font-size: x-large;
+    display: table-cell;
    }
   .blog-items a {
     text-decoration: none;
@@ -48,27 +76,34 @@ h2{
   
   .blog-items a:hover {
     background:  #b5bec9;
+    opacity: 0.5;
   }
   
-  @media all and (max-width: 800px) {
+  @media all and (max-width: 700px) {
     .blog-items {
       justify-content: space-around;
     }
   }
   
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     .blog-items {
       flex-flow: column wrap;
       padding: 0;
     }
     .blog-items a { 
       text-align: center; 
-      padding: 10px;
+      padding: 0px;
       border-top: 1px solid rgba(255, 255, 255,0.3); 
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
     }
     .blog-items li:last-of-type a {
       border-bottom: none;
     }
- }  
+ }
+ .footer {
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+ 
  
