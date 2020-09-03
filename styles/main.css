@@ -8,7 +8,7 @@
 *{
     font-family: 'Kumbh Sans', sans-serif;
    /* used to diagnose where issues with white space were */
-     border: 1px solid red;
+     /*border: 1px solid red;*/
 }
 body, html{
     min-height: 100%;
