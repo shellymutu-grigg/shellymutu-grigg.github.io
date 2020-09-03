@@ -6,12 +6,12 @@
     # 3. Compare and use classes and ids to manipulate elements
 */
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* used to diagnose where issues with white space were */
-    /* border: 1px solid red;*/
+    font-family: 'Kumbh Sans', sans-serif;
+   /* used to diagnose where issues with white space were */
+     border: 1px solid red;
 }
 body, html{
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -19,17 +19,6 @@ body, html{
     margin: 0 auto;
     display: flex block;
     flex-direction: column;
-}
-img {
-    border-radius: 50%;
-    max-width: 30%;
-    width: 80px;
-    height: 60px auto;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
 }
 ul{
     list-style-type: none;
@@ -49,13 +38,10 @@ p{
 /*
  # Use classes to manipulate elements
 */
-.container{
-    display: flex block;
-    flex-flow: column;
-}
+
 .header{
-    text-emphasis-color: #F5EEEE;
-    color: #333333;
+    text-emphasis-color: #a09f9f;
+    color: #F5EEEE;
     background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
     height: 25%;
     background-position: center;
@@ -63,9 +49,13 @@ p{
     background-size: cover;
     font-size: 110%;
     font-weight: bolder;
-    text-shadow: 1px 1px #bfcfd8;
+    text-shadow: 1px 1px #d5d8da;
     text-align: center;
-    padding: 20px;
+    padding: 5%;
+ }
+.header-text{
+    position: relative;
+    top: 0.1em;
 }
 .content {
     align-items: center;
@@ -78,12 +68,23 @@ p{
     padding-top: 10px;
     overflow: hidden;
 }
+.blog-link {
+    border-radius: 50%;
+    max-width: 30%;
+    width: 80px;
+    height: 70px auto;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
 .blog-items{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding-top: 20px;
-    height: 10%;
+    padding-top: 10px;
+    height: 5%;
     margin: 0;
     font-size: x-large;
     display: table-cell;
@@ -92,38 +93,18 @@ p{
         text-decoration: none;
         display: block;
         padding: 0.5em;
-        color: #7C8285);
+        color: #7C8285;
     }
   
     .blog-items a:hover {
         background:  #b5bec9;
         opacity: 0.5;
     }
-  
-    @media all and (max-width: 700px) {
-        .blog-items {
-        justify-content: space-around;
-        }
-    }
-  
-    @media all and (max-width: 500px) {
-        .blog-items {
-        flex-flow: column wrap;
-        padding: 0;
-        }
-        .blog-items a { 
-        text-align: center; 
-        padding: 0px;
-        border-top: 1px solid #ffffff; 
-        border-bottom: 1px solid #000000; 
-        }
-        .blog-items li:last-of-type a {
-        border-bottom: none;
-        }
-    }
+
 .tooltip {
    position: relative;
    display: inline-block;
+   padding-bottom: 2%;
 }
     .tooltip .tooltiptext {
         visibility: hidden;
@@ -143,20 +124,15 @@ p{
         visibility: visible;
     }
 .wrapper {
-   min-height: 100%;
-   height: 75%;
-   /* Equal to height of footer */
-   /* But also accounting for potential margin-bottom of last child */
-   margin-bottom: -50px;
+   min-height: 3em;
+   margin-bottom: -40px;
+   position: relative;
 }
-.footer,
-.push {
-    height: 50px;
-}
-  .footer {
-    flex-shrink: 0;
-    overflow: hidden;
+.footer{
+    min-height: auto;
     text-align: center;
-  }
- 
- 
+    position: sticky;
+    bottom: 0;
+    padding-top: 20px;
+    background-color: #fff;
+}
