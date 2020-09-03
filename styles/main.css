@@ -127,6 +127,7 @@ p{
    min-height: 3em;
    margin-bottom: -40px;
    position: relative;
+   padding-bottom: 2%;
 }
 .footer{
     min-height: auto;
