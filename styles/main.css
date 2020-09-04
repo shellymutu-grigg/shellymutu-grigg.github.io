@@ -27,6 +27,11 @@ ul{
 }
 p{
     padding: 10px 10%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+    letter-spacing: -.5px;
 }
 /*
  # Use an id to manipulate an element
