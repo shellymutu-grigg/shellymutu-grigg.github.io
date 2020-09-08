@@ -17,7 +17,6 @@
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="wrapper">
       <header class="header">
         <h1 class="header-text">Investigating the differences between relative, absolute, and fixed positioning in CSS</h1> 
       </header>
@@ -30,7 +29,7 @@
         <p>
             The first concept that really helped me was one that is covered well in the Udacity Tutorials about the concept of everything on a webpage being a "box" and having lots of boxes within boxes (even circles are boxes!).  The second concept to help me in my understanding of positioning was the concept of parent and child objects.  A child object (or "element") lives within a parent object and will be positioned according to what the properties of the parent object are.
             <br>
-            <img id="patent-child-image"src="../images/parent-child-box.png" alt="Parent with child boxes">
+            <img class="pic" src="../images/parent-child-box.png" alt="Parent with child boxes">
             <br>
         </p>
         <p>
@@ -41,15 +40,39 @@
             <br>
             One thing to note is the position is it always measured from the edge of one element to the edge or corner of another.  For example if we talk about a "top: 15px;" being defined then the top of the child object will be pushed down 15px from the edge of the parent object. In contrast if the "bottom: 30px;" is defined then the bottom of the object will be pushed up from the edge of the parent object.
             <br>
+            <table class="center">
+              <tr>
+                <th></th>
+                <th><img class="code-pic" src="../images/relative-pic-code.png" alt="Relatively positioned tooltip ojects code"></th>
+                <th><img class="pic"src="../images/relative-pic.png" alt="Relatively positioned tooltip ojects"></th>
+                <th></th>
+              </tr>
+            </table>  
         </p> 
         <p> 
             Setting the <span style="color:#6e587e;font-weight:bold">"position: absolute;"</span> means the element is removed from the normal document flow of positioning elements on the page and its position is determined relative to the closest positioned parent or ancestor.  If an absolute positioned element has no positioned ancestors, it will use the document body, and will move with page scrolling.
             <br> 
+            <table class="center">
+              <tr>
+                <th></th>
+                <th><img class="code-pic" src="../images/absolute-pic-code.png" alt="Absolute positioned tooltip ojects code"></th>
+                <th><img class="pic"src="../images/absolute-pic.png" alt="Absolute positioned tooltip ojects"></th>
+                <th></th>
+              </tr>
+            </table>  
         </p>
         <p>    
             The <span style="color:#6e587e;font-weight:bold">"position: fixed;"</span> is one that I have seen on many web pages and seems to be in fashion at the moment.  This means that the element does not move when the page is scrolled.  I can see there is a need to be careful of this as it can block other elements like links etc if it is not used carefully.
-            <br>          
-        </p>
+            <br> 
+            <table class="center">
+              <tr>
+                <th></th>
+                <th><img class="code-pic" src="../images/fixed-pic-code.png" alt="Fixed positioned tooltip ojects code"></th>
+                <th><img class="pic"src="../images/fixed-pic.png" alt="Fixed positioned tooltip ojects"></th>
+                <th></th>
+              </tr>
+            </table>       
+         </p>
         <p>
           <span style="color:#baacc4;font-weight:bold">References:</span><br>
             1. <a href="https://webplatform.github.io/docs/tutorials/CSS_absolute_and_fixed_positioning/#:~:text=Whereas%20the%20position%20and%20dimensions,or%20the%20paper's%20page%20box."">GitHub Article</a><br>
@@ -58,7 +81,6 @@
             4. <a href="https://www.w3schools.com/css/css_positioning.asp">W3Schools Article</a><br>
         </p>
       </content>
-    </div>
     <footer class="footer"><a href="../index.html">Home</a></footer>
   </body>
 </html>

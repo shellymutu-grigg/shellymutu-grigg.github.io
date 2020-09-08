@@ -33,6 +33,27 @@ p{
     margin: 0;
     letter-spacing: -.5px;
 }
+table, td, th {
+    border: none;
+    align-self: center;
+    max-width: 100%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th {
+    max-height: 100%;
+    padding: 2%;
+    max-width: 100%;
+    align-content: center;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 /*
  # Use an id to manipulate an element
 */
@@ -70,76 +91,61 @@ p{
 }
 .blog-heading{
     padding-top: 20%;
+    font-size: x-large;
+    font-weight: bold;
     padding-bottom: 20%;
-}
-.blog-table{
-    display: flex;
-    flex-flow: row;
-    width: 90%;
-    padding-top: 10px;
-    overflow: hidden;
 }
 .blog-link {
     border-radius: 50%;
-    max-width: 30%;
-    width: 80px;
-    height: 70px auto;
+    max-width: 40%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
 }
-.blog-items{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding-top: 15px;
-    height: 5%;
-    margin: 0;
-    font-size: x-large;
-    display: table-cell;
-}
-    .blog-items a {
-        text-decoration: none;
-        display: block;
-        padding: 0.5em;
-        color: #7C8285;
-    }
-  
-    .blog-items a:hover {
+
+    .blog-link:hover {
         background:  #eff1f3;
         opacity: 0.4;
     }
-
-.tooltip {
-   position: relative;
-   display: inline-block;
-   padding-bottom: 2%;
-}
-    .tooltip .tooltiptext {
-        visibility: visible;
-        width: 100px;
-        background-color: #afadad;
+.blog-label{
         color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 10px 15%;
-        font-size: medium;
-        /* Position the tooltip */
+        background: #afadad;
+        font-size: x-large;
+        display: block;
+        max-width: 50%;
+        align-self: center;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        /* Position label */
         position: relative;
-        z-index: 1;   
-    }
-  
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
-    }
-.wrapper {
-   min-height: 3em;
-   margin-bottom: -40px;
-   position: relative;
-   padding-bottom: 2%;
-}
+}    
+.pic{
+    flex-grow: 1; 
+    object-fit: cover; 
+    padding: 2%;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}  
+.pic{
+    flex-grow: 2; 
+    object-fit: cover; 
+    padding: 2%;
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+} 
 .footer{
     min-height: auto;
     text-align: center;
