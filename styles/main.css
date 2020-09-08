@@ -154,4 +154,25 @@ table, td, th {
     bottom: 0;
     padding-top: 20px;
     background-color: #fff;
+    text-decoration: none;
+    color: #575763;
 }
+  a:link{
+    color: #575763;
+    text-decoration: none;
+  }
+  
+  a:visited{
+    color: #575763;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #575763;
+    text-decoration: none;
+  }
+  
+  a:active{
+    color: #575763;
+    text-decoration: none;
+  }
