@@ -6,19 +6,24 @@
     # 3. Compare and use classes and ids to manipulate elements
 */
 *{
-    font-family: 'Roboto', sans-serif;
-   /* used to diagnose where issues with white space were */
+  font-family: 'Noto Sans TC', sans-serif;  
+   /*used to diagnose where issues with white space were */
      /*border: 1px solid red;*/
 }
 body, html{
-    min-height: 100%;
-    margin: 0 auto;
-    padding: 0;
+  height: 100%;
+  width: 100%;  
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  word-wrap:break-word !important;
+  scroll-behavior: smooth;
 }
  body {
     margin: 0 auto;
-    display: flex block;
-    flex-direction: column;
+    display: flexbox;
+    flex-flow: column;
+    min-height: 100%;
 }
 ul{
     list-style-type: none;
@@ -27,33 +32,117 @@ ul{
 }
 p{
     padding: 10px 10%;
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-size: 1.1rem;
+    font-weight: 200;
     line-height: 1.5;
     margin: 0;
     letter-spacing: -.5px;
 }
+nav {
+	margin: 0px 0;
+	background-color: #333;
+}
+
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	background-color: #333;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+  line-height: 50px;
+	text-decoration:none;
+}
+
+nav a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 50px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:200px;
+	float: none;
+	display:list-item;
+  position: relative;
+  z-index: 9999;
+}
+
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-50px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ''; }
+li > a:only-child:after { content: ''; }
+
 table, td, th {
     border: none;
     align-self: center;
     max-width: 100%;
+
   }
   
   table {
     border-collapse: collapse;
-    width: 80%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10%;
   }
   
   th {
     max-height: 100%;
     padding: 2%;
-    max-width: 100%;
-    align-content: center;
+    max-width: 30%;
+    align-content: right;
+    text-align: center;
+    vertical-align: middle;
+
   }
   .center {
     margin-left: auto;
     margin-right: auto;
   }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 35px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 40px;
+}
+
 /*
  # Use an id to manipulate an element
 */
@@ -68,16 +157,16 @@ table, td, th {
 */
 
 .header{
-    text-emphasis-color: #080808;
     color: #fff;
     background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
     height: 25%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #fff;
     font-size: 110%;
     font-weight: bolder;
-    text-shadow: 1px 1px #d5d8da;
+    text-shadow: 2px 2px #222222;
     text-align: center;
     padding: 5%;
  }
@@ -85,94 +174,71 @@ table, td, th {
     position: relative;
     top: 0.1em;
 }
+
 .content {
     align-items: center;
     text-align: center;
-}
-.blog-heading{
-    padding-top: 20%;
-    font-size: x-large;
-    font-weight: bold;
-    padding-bottom: 20%;
-}
-.blog-link {
-    border-radius: 50%;
-    max-width: 40%;
-    width: auto;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-}
+    padding: 16px;
+    background-color: #fff;
 
-    .blog-link:hover {
-        background:  #eff1f3;
-        opacity: 0.4;
-    }
-.blog-label{
-        color: #fff;
-        background: #afadad;
-        font-size: x-large;
-        display: block;
-        max-width: 50%;
-        align-self: center;
-        width: auto;
-        height: auto;
-        margin: 0 auto;
-        margin-top: 0px;
-        margin-right: auto;
-        margin-bottom: 0px;
-        margin-left: auto;
-        /* Position label */
-        position: relative;
-}    
+}
 .pic{
-    flex-grow: 1; 
+    flex-grow: 0.5; 
     object-fit: cover; 
     padding: 2%;
     max-height: 100%;
     max-width: 100%;
-    height: auto;
-    width: auto;
+    height: 60%;
+    width: 60%;
+}
+.code-pic{
+  object-fit: cover; 
+  padding: 2%;
+  height: 230%;
+  width: 230%;
+  padding-right: 5%;
+  padding-left: 25%;
+}
+.index-pic{
+  object-fit: cover; 
+  padding: 2%;
+  max-height: 50%;
+  max-width: 50%;
+  height: auto;
+  width: auto;
 }  
-.pic{
-    flex-grow: 2; 
-    object-fit: cover; 
-    padding: 2%;
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-} 
+
 .footer{
-    min-height: auto;
+  height: 5%;  
+  max-height: 45px;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    padding-top: 20px;
     background-color: #fff;
     text-decoration: none;
     color: #575763;
 }
-  a:link{
+.footer a:link{
     color: #575763;
     text-decoration: none;
   }
   
-  a:visited{
+  .footer a:visited{
     color: #575763;
     text-decoration: none;
   }
   
-  a:hover{
+  .footer a:hover{
+    color: #575763;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  
+  .footer  a:active{
     color: #575763;
     text-decoration: none;
   }
-  
-  a:active{
-    color: #575763;
-    text-decoration: none;
+  .footer a {
+    line-height: 30px;
   }
