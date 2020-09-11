@@ -37,7 +37,7 @@ p{
     line-height: 1.5;
     margin: 0;
     letter-spacing: 0.1rem;
-    text-align: justify center;
+    text-align: left;
 }
 nav {
 	margin: 0px 0;
@@ -123,11 +123,14 @@ table, td, th {
 /*
  # Use an id to manipulate an element
 */
-#blog-header{
-    font-display: block;
+.blog-header{
     color:  #585858c5;
     padding-top: 1%;
     padding-bottom: 1%;
+    text-align: center;
+    align-self: center;
+    font-size: 150%;
+    font-weight: bolder;
 }
 /*
  # Use classes to manipulate elements
@@ -164,7 +167,9 @@ table, td, th {
 .text-heading{
   color:#6e587e;
   font-weight:bold; 
-  font-size: 110%;
+  font-size: 120%;
+  text-align: center;
+  align-self: center;
 }
 .coding{
   font: monospace monospace;
@@ -182,10 +187,10 @@ table, td, th {
 }
 .pic{
     object-fit: contain; 
-    padding: 2%;
+    padding: 1%;
     max-height: 80%;
     max-width: 80%;
-    height: 40%;
+    height: 50%;
     width: 60%;
 }
 .pic-solo{
