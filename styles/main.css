@@ -6,7 +6,7 @@
     # 3. Compare and use classes and ids to manipulate elements
 */
 *{
-  font-family: 'Noto Sans TC', sans-serif;  
+  font-family: 'Oxygen', sans-serif;  
    /*used to diagnose where issues with white space were */
      /*border: 1px solid red;*/
 }
@@ -40,44 +40,49 @@ p{
 }
 nav {
 	margin: 0px 0;
-	background-color: #333;
+  background-color: #fff;
+  
 }
 
 nav ul {
 	padding: 0;
   margin: 0;
 	list-style: none;
-	position: relative;
+  position: relative;
+  background-blend-mode: overlay;
 	}
 	
 nav ul li {
 	display:inline-block;
-	background-color: #333;
+  background-color: #fff;
+
 	}
 
 nav a {
 	display:block;
 	padding:0 10px;	
-	color:#FFF;
+  color:#585858c5;
+  text-shadow: 1px 0px #000;
 	font-size:20px;
   line-height: 50px;
-	text-decoration:none;
+  text-decoration:none;
 }
 
 nav a:hover { 
-	background-color: #000000; 
+  background-color: #bfc0c2; 
 }
 
 /* Hide Dropdowns by Default */
 nav ul ul {
 	display: none;
 	position: absolute; 
-	top: 50px; /* the height of the main nav */
+  top: 50px; /* the height of the main nav */
+  
 }
 	
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
+  display:inherit;
 }
 	
 /* Fisrt Tier Dropdown */
@@ -111,7 +116,6 @@ table, td, th {
   table {
     border-collapse: collapse;
     width: 100%;
-    background-color: #fff;
     border-radius: 10%;
   }
   
@@ -146,9 +150,9 @@ table, td, th {
 /*
  # Use an id to manipulate an element
 */
-#technical-blog-header{
+#blog-header{
     font-display: block;
-    color:  #575763;
+    color:  #585858c5;
     padding-top: 1%;
     padding-bottom: 1%;
 }
@@ -164,15 +168,17 @@ table, td, th {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    font-size: 110%;
     font-weight: bolder;
-    text-shadow: 2px 2px #222222;
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
     text-align: center;
     padding: 5%;
+    position: relative;
  }
 .header-text{
     position: relative;
     top: 0.1em;
+    line-height: 40px;
 }
 
 .content {
