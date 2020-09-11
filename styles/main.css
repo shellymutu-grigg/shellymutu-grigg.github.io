@@ -163,7 +163,7 @@ table, td, th {
 .header{
     color: #fff;
     background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
-    height: 25%;
+    height: 15%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +172,9 @@ table, td, th {
     text-shadow: 2px 2px 2px #000;
     text-transform: uppercase;
     text-align: center;
-    padding: 5%;
+    line-height: 40px;
+    padding-top: 1%;
+    padding-bottom: 3%;
     position: relative;
  }
 .header-text{
