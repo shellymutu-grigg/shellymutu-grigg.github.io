@@ -31,33 +31,33 @@ ul{
     font-weight: bold;
 }
 p{
-    padding: 10px 10%;
+    padding: 10px 20%;
     font-size: 1.1rem;
     font-weight: 200;
     line-height: 1.5;
     margin: 0;
-    letter-spacing: -.5px;
+    letter-spacing: 0.1rem;
+    text-align: justify center;
 }
 nav {
 	margin: 0px 0;
   background-color: #fff;
-  
+  position: fixed;
+  top: 0;
+  z-index: 9999;  
+  width: 100%;
 }
-
 nav ul {
 	padding: 0;
   margin: 0;
 	list-style: none;
   position: relative;
   background-blend-mode: overlay;
-	}
-	
+}
 nav ul li {
 	display:inline-block;
   background-color: #fff;
-
-	}
-
+}
 nav a {
 	display:block;
 	padding:0 10px;	
@@ -67,24 +67,19 @@ nav a {
   line-height: 50px;
   text-decoration:none;
 }
-
 nav a:hover { 
   background-color: #bfc0c2; 
 }
-
 /* Hide Dropdowns by Default */
 nav ul ul {
 	display: none;
 	position: absolute; 
   top: 50px; /* the height of the main nav */
-  
 }
-	
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
   display:inherit;
-}
-	
+}	
 /* Fisrt Tier Dropdown */
 nav ul ul li {
 	width:200px;
@@ -93,59 +88,37 @@ nav ul ul li {
   position: relative;
   z-index: 9999;
 }
-
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
 	position: relative;
 	top:-50px; 
 	left:170px;
 }
-
-	
 /* Change this in order to change the Dropdown symbol */
 li > a:after { content:  ''; }
 li > a:only-child:after { content: ''; }
 
 table, td, th {
     border: none;
-    align-self: center;
     max-width: 100%;
-
   }
   
   table {
     border-collapse: collapse;
     width: 100%;
-    border-radius: 10%;
+    border-radius: 5%;
+    align-self: center;
+    empty-cells: show;
   }
   
   th {
-    max-height: 100%;
-    padding: 2%;
-    max-width: 30%;
-    align-content: right;
+    max-height: 50%;
+    padding: 0;
+    max-width: 50%;
     text-align: center;
     vertical-align: middle;
-
+    text-align: justify center;
   }
-  .center {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  min-height: 35px;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 40px;
-}
 
 /*
  # Use an id to manipulate an element
@@ -168,21 +141,38 @@ table, td, th {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    font-weight: bolder;
+    font-size: 100%;
     text-shadow: 2px 2px 2px #000;
     text-transform: uppercase;
     text-align: center;
-    line-height: 40px;
-    padding-top: 1%;
+    padding-top: 5%;
     padding-bottom: 3%;
     position: relative;
  }
 .header-text{
     position: relative;
-    top: 0.1em;
-    line-height: 40px;
+    top: -0.1em;
 }
-
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pre{
+  font: monospace monospace;
+  color: #3a6cf5;
+}
+.text-heading{
+  color:#6e587e;
+  font-weight:bold; 
+  font-size: 110%;
+}
+.coding{
+  font: monospace monospace;
+  color: #3a6cf5;
+  font-size: 150%;
+  text-align: left;
+  padding-left: 20%;
+}
 .content {
     align-items: center;
     text-align: center;
@@ -191,24 +181,31 @@ table, td, th {
 
 }
 .pic{
-    flex-grow: 0.5; 
-    object-fit: cover; 
+    object-fit: contain; 
     padding: 2%;
-    max-height: 100%;
-    max-width: 100%;
-    height: 60%;
+    max-height: 80%;
+    max-width: 80%;
+    height: 40%;
     width: 60%;
 }
-.code-pic{
-  object-fit: cover; 
+.pic-solo{
+  object-fit: contain; 
   padding: 2%;
-  height: 230%;
-  width: 230%;
-  padding-right: 5%;
-  padding-left: 25%;
+  max-height: 100%;
+  max-width: 100%;
+  height: 80%;
+  width: 80%;
+}
+.code-pic{
+  object-fit: contain; 
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+  padding-right: 1%;
+  padding-left: 50%;
 }
 .index-pic{
-  object-fit: cover; 
+  object-fit: contain; 
   padding: 2%;
   max-height: 50%;
   max-width: 50%;
@@ -218,7 +215,7 @@ table, td, th {
 
 .footer{
   height: 5%;  
-  max-height: 45px;
+  max-height: 5%;
     text-align: center;
     position: -webkit-sticky;
     position: sticky;
@@ -226,6 +223,19 @@ table, td, th {
     background-color: #fff;
     text-decoration: none;
     color: #575763;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  min-height: 35px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 40px;
 }
 .footer a:link{
     color: #575763;
@@ -250,3 +260,4 @@ table, td, th {
   .footer a {
     line-height: 30px;
   }
+  
