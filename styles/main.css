@@ -214,16 +214,42 @@ table, td, th {
 .text-heading{
   color: #585858c5;
   font-weight:bold; 
-  font-size: 120%;
+  font-size: 150%;
   text-align: center;
   align-self: center;
 }
 /* 
-# Define text header class styling
+# Define table text class styling
 */
 .table-text{
   text-align: center;
   align-self: center;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 120%;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+/* 
+# Define link text class styling
+*/
+.link-text{
+  text-align: center;
+  align-self: center;
+  font-weight: 900;
+  font-size: 150%;
+  text-decoration: none;
+}
+/* 
+# Define farewell text class styling
+*/
+.farewell-text{
+  text-align: center;
+  align-self: center;
+  font-weight: 600;
+  font-size: 150%;
+  text-decoration: none;
 }
 /* 
 # Define pic class styling
