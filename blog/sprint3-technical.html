@@ -1,158 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-        <link href="../styles/main.css" rel="stylesheet" type="text/css">
-        <title>Discussing HTML, CSS and ......the DOM</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#"id="top">Technical Blogs</a>
-                <!-- First Tier Drop Down -->
-                <ul> 
-                    <li><a href="sprint1-technical.html">Sprint 01 Technical</a></li>
-                    <li><a href="sprint2-technical.html">Sprint 02 Technical</a></li>
-                    <li><a href="sprint3-technical.html">Sprint 03 Technical</a></li>
-                    <li><a href="sprint4-technical.html">Sprint 04 Technical</a></li>
-                </ul>        
-              </li>
-              <li><a href="#">Cultural Blogs</a>
-              <!-- First Tier Drop Down -->
-                <ul>
-                    <li><a href="sprint1-cultural.html">Sprint 01 Cultural</a></li>
-                    <li><a href="sprint2-cultural.html">Sprint 02 Cultural</a></li>
-                    <li><a href="sprint3-cultural.html">Sprint 03 Cultural</a></li>
-                    <li><a href="sprint4-cultural.html">Sprint 04 Cultural</a>
-                    </li>
-                </ul>
-              </li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <header class="header">
-            <table class = "header-table">
-                <tr>
-                  <th class="header-text"><h1 class="header-text">Discussing HTML, CSS and ......the DOM</h1></th>
-                </tr>
-              </table> 
-          </header>
-          <content class="content">
-            <p class="blog-header">Sprint-03 Technical Blog</p>
-            <h3>11<sup>th</sup> September 2020</h3>
-            <table class="center">
-              <tr>
-                <th><span class="text-heading">Understanding the differences between HTML and CSS</span></th>
-              </tr>
-            </table>
-            <p>
-              When starting to understand the structure of creating modern day webpages it is key to understand how the different pieces connect to and work with each other to create the impressive, interactive and appealing webpages of today.  A good analogy to think about is that of a car.  If we think of <b class="pre">&lt;html&gt;</b> as the chassis of a car, it provides the structure to allow you to add the elements that you need. While you might not be able to see it easily, without the <b class="pre">&lt;html&gt;</b> a webpage won't run, just like a chassis in a car! For example: an element of <b class="pre">&lt;html&gt;</b> is the <b class="pre">&lt;header&gt;</b>.  The <b class="pre">&lt;header&gt;</b> could be associated with headlights on a car.  The headlights have to be fitted to the chassis to be stable and connected to the wiring system to be powered up, in the same way a <b class="pre">&lt;header&gt;</b> has to be imbedded into the <b class="pre">&lt;html&gt;</b> to render correctly.<br>
-            </p>
-            <table class="center">
-              <tr>
-                <th></th>
-                <th><img class="pic" src="../images/chassis-analogy.png" alt="html structure with car chassis"></th>
-                <th></th>
-              </tr>
-            </table>
-            <p>  
-              All cars have chassis', however not all cars are of the same brand. Car enthusiasts are able to look quickly at a vehicle and tell you exactly what brand of vehicle you are looking at.  <b><em>CSS</em></b> is like the brand of a car.  It defines how the vehicle will look.  It provides methods and means to determine how for example users will see the headlights on your car and what colour they will shine.            
-            </p>
-            <table class="center">
-              <tr>
-                <th><span class="text-heading">Thinking about the control flow and loops (using an example process from everyday life)</span></th>
-              </tr>
-            </table>
-            <p>
-              Within programming languages there is a term called <b><em>control flow</em></b>.  This is talking about the control of execution of commands in the programming language.  Like water the control of a programme will flow in a logical order unless it encounters instructions where it has to behave differently as water would when it comes into contact with a dam or a rock. 
-
-              In the instance where a progamme, encounters something unusual it will assess the instruction and act accordingly.  Like water when it comes into contact with a rock, it will find the path of least resistance and proceed.  This can be seen when looking a <b><em>loops</em></b> within programming.  A <b><em>loop</em></b> like a water will continue to flow in the path of least resistance as long as the conditions that are needed for the flow to continue remain true.  To provide an everyday example of the <b><em>control flow</em></b> of a loop think of eating breakfast. <br> <br>To be able to eat breakfast certain elements need to remain true.<br> 
-              1. The person eating must be hungry<br>
-              2. Food must be available<br><br>
-              A programming loop of this might look like the following:
-            </p>
-            <table class="center">
-              <tr>
-                <th></th>
-                <th><img class="pic-solo" src="../images/eat-breakfast-loop.png" alt="Loop code example for eating breakfast"></th>
-                <th></th>
-              </tr>
-            </table>
-            <p>
-              The programme will continue to assess the <b>hungry</b> and <b>food_is_available</b> variables and leave control with the loop while <b>hungry</b> and <b>food_available</b> remain true, it will continue to execute the function <b><em>continueToEatBreakfast()</em></b>.  As soon as either <b>hungry</b> or <b>food_available</b> are no longer true the programme will stop executing the loop and continue through the code.<br><br>
-            </p>
-            <table class="center">
-              <tr>
-                <th> <span class="text-heading">.....the DOM and an example of to interact with it</span></th>
-              </tr>
-            </table>
-            <p>
-              The <b><em>Document Object Model</em></b> or <b><em>DOM</b></em> for short is the glue that makes up a document within a webpage.  It is the <b class="pre">&lt;html&gt;</b> document as a tree structure where in each <b>node</b> is an object representing a part of the document.  This is captured well at a high level by <a href="https://www.kirupa.com">Kirupa Channathambi</a> in his video <a href="https://www.kirupa.com/html5/javascript_the_browser_and_the_dom.htm#tutorialInformation">javascript, the broswer and the DOM</a> as per the image below:
-            </p>
-            <table class="center">
-              <tr>
-                <th><img class="pic" src="../images/DOM-high-level.png" alt="High-Level overview of the Document Object MOdel (DOM)"><br><figcaption>High-Level DOM overview</figcaption></th>
-              </tr>
-            </table>
-            <br>
-            <br>
-            <p>
-              A key reason to interact with the <b><em>DOM</b></em> is especially important in the placement of elements on a page.  As mentioned in the <a href="sprint2-technical.html">Sprint-02 Technical Blog</a> the positioning of items within a webpage is dependent on the parent object of a child element, and where it is located in a page.  Understanding the structure above allows a webpage to display items in the correct place on a webpage.
-            </p>
-            <table class="center">
-              <tr>
-                <th><span class="text-heading">Arrays and Objects; what they are and how they differ</span><br></th>
-              </tr>
-            </table>
-            <p>
-              <b><em>Arrays</em></b> and <b><em>Objects</em></b> in programming can be quite confusing, they may look very similar in structure, behave in a very similar manners, but they are in fact quite different.  
-              <br>
-              <br>
-              An <b><em>Array</em></b> in JavaScript is a single variable that is used to store different elements - <a href="https://www.geeksforgeeks.org/arrays-in-javascript/#:~:text=In%20JavaScript%2C%20array%20is%20a,used%20to%20store%20different%20elements.&text=Unlike%20most%20languages%20where%20array,ways%20to%20declare%20an%20array.">GeeksforGeeks</a>.
-              <br>
-              <br>
-              An <b><em>Object</em></b> on the other hand "loosely speaking, may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs" - <a href="https://www.geeksforgeeks.org/objects-in-javascript/">GeeksforGeeks</a>.<br>
-              <br>
-              The key difference between the two is the way data is accessed in both. 
-              <br>
-              <br>
-              An <b><em>Array</em></b> uses a position to determine where and element is e.g. 
-            </p>
-            <table class="center">
-              <tr>
-                <th></th>
-                <th><img class="pic-solo" src="../images/declare-an-array.png" alt="Declaring an array code example using numbers"></th>
-                <th></th>
-              </tr>
-            </table>
-             <p> 
-              Unlike humans a programme starts counting at 0 rather than 1.   So as can be seen from the above element "one" is located at position numbersArray[0].<br>
-              <br>
-              An <b><em>Object</em></b> on the other hand uses a unique identifier to locate an element called a <em><b>propertyName</em></b> e.g. 
-            </p>
-            <table class="center">
-              <tr>
-                <th><img class="pic-solo" src="../images/declare-an-object.png" alt="Declaring an object code example"></th>
-              </tr>
-            </table>
-            <p>
-              In the above example <b><em>numbers</em></b> has three properties. To find the correct property of an object a programme needs to use one of its propertyName values to correctly identify the property as is seen on line 10 of the code.
-            </p>
-            <br>
-            <table class="center">
-              <tr>
-                <th><span class="text-heading">Functions: what they are and why they are useful</span></th>
-              </tr>
-            </table>
-            <p>
-              A <b><em>Function</em></b> in JavaScript is a set of statements that take inputs, do some specific computation, and produces output - <a href="https://www.geeksforgeeks.org/functions-in-javascript/">GeeksforGeeks</a>.<br>
-              They are useful because they are able to streamline repetative behaviour allowing reuse of code instead of repeating it.  ***See the <b><em>continueToEatBreakfast()</em></b> example above! They also have the ability to speed up performance of webpages if implemented correctly.
-            </p>
-          </content>
-        <footer class="footer"><a href="../index.html">Home</a></footer>
-      </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <script src="../js/main.js" type="text/javascript"></script>
+    <title>Discussing HTML, CSS and ......the DOM</title>
+  </head>
+  <body>
+    <nav id="navbar_id"></nav> 
+    <header class="header">
+      <table class ="center">
+        <tr>
+          <th class="header-text">Discussing HTML, CSS and ......the DOM</th>
+        </tr>
+      </table> 
+    </header>
+    <content class="content">
+      <p class="blog-header">Sprint-03 Technical Blog</p>
+      <p class="date"><b>11<sup>th</sup> September 2020</b></p>
+      <table class="center">
+        <tr>
+          <th><span class="text-heading">Understanding the differences between HTML and CSS</span></th>
+        </tr>
+      </table>
+      <p>
+        When starting to understand the structure of creating modern day webpages it is key to understand how the different
+        pieces connect to and work with each other to create the impressive, interactive and appealing webpages of today. A
+        good analogy to think about is that of a car. If we think of <b class="pre">&lt;html&gt;</b> as the chassis of a
+        car, it provides the structure to allow you to add the elements that you need. While you might not be able to see it
+        easily, without the <b class="pre">&lt;html&gt;</b> a webpage won't run, just like a chassis in a car! For example:
+        an element of <b class="pre">&lt;html&gt;</b> is the <b class="pre">&lt;header&gt;</b>. The <b
+          class="pre">&lt;header&gt;</b> could be associated with headlights on a car. The headlights have to be fitted to
+        the chassis to be stable and connected to the wiring system to be powered up, in the same way a <b
+          class="pre">&lt;header&gt;</b> has to be imbedded into the <b class="pre">&lt;html&gt;</b> to render
+        correctly.<br>
+      </p>
+      <table class="center">
+        <tr>
+          <th></th>
+          <th><img class="pic" src="../images/chassis-analogy.png" alt="html structure with car chassis"></th>
+          <th></th>
+        </tr>
+      </table>
+      <p>
+        All cars have chassis', however not all cars are of the same brand. Car enthusiasts are able to look quickly at a
+        vehicle and tell you exactly what brand of vehicle you are looking at. <b><em>CSS</em></b> is like the brand of a
+        car. It defines how the vehicle will look. It provides methods and means to determine how for example users will see
+        the headlights on your car and what colour they will shine.
+      </p>
+      <table class="center">
+        <tr>
+          <th><span class="text-heading">Thinking about the control flow and loops (using an example process from everyday
+              life)</span></th>
+        </tr>
+      </table>
+      <p>
+        Within programming languages there is a term called <b><em>control flow</em></b>. This is talking about the control
+        of execution of commands in the programming language. Like water the control of a programme will flow in a logical
+        order unless it encounters instructions where it has to behave differently as water would when it comes into contact
+        with a dam or a rock.
+    
+        In the instance where a progamme, encounters something unusual it will assess the instruction and act accordingly.
+        Like water when it comes into contact with a rock, it will find the path of least resistance and proceed. This can
+        be seen when looking a <b><em>loops</em></b> within programming. A <b><em>loop</em></b> like a water will continue
+        to flow in the path of least resistance as long as the conditions that are needed for the flow to continue remain
+        true. To provide an everyday example of the <b><em>control flow</em></b> of a loop think of eating breakfast. <br>
+        <br>To be able to eat breakfast certain elements need to remain true.<br>
+        1. The person eating must be hungry<br>
+        2. Food must be available<br><br>
+        A programming loop of this might look like the following:
+      </p>
+      <table class="center">
+        <tr>
+          <th></th>
+          <th><img class="pic-solo" src="../images/eat-breakfast-loop.png" alt="Loop code example for eating breakfast">
+          </th>
+          <th></th>
+        </tr>
+      </table>
+      <p>
+        The programme will continue to assess the <b>hungry</b> and <b>food_is_available</b> variables and leave control
+        with the loop while <b>hungry</b> and <b>food_available</b> remain true, it will continue to execute the function
+        <b><em>continueToEatBreakfast()</em></b>. As soon as either <b>hungry</b> or <b>food_available</b> are no longer
+        true the programme will stop executing the loop and continue through the code.<br><br>
+      </p>
+      <table class="center">
+        <tr>
+          <th> <span class="text-heading">.....the DOM and an example of to interact with it</span></th>
+        </tr>
+      </table>
+      <p>
+        The <b><em>Document Object Model</em></b> or <b><em>DOM</b></em> for short is the glue that makes up a document
+        within a webpage. It is the <b class="pre">&lt;html&gt;</b> document as a tree structure where in each <b>node</b>
+        is an object representing a part of the document. This is captured well at a high level by <a
+          href="https://www.kirupa.com">Kirupa Channathambi</a> in his video <a
+          href="https://www.kirupa.com/html5/javascript_the_browser_and_the_dom.htm#tutorialInformation">javascript, the
+          broswer and the DOM</a> as per the image below:
+      </p>
+      <table class="center">
+        <tr>
+          <th><img class="pic" src="../images/DOM-high-level.png"
+              alt="High-Level overview of the Document Object MOdel (DOM)"><br>
+            <figcaption>High-Level DOM overview</figcaption>
+          </th>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <p>
+        A key reason to interact with the <b><em>DOM</b></em> is especially important in the placement of elements on a
+        page. As mentioned in the <a href="sprint2-technical.html">Sprint-02 Technical Blog</a> the positioning of items
+        within a webpage is dependent on the parent object of a child element, and where it is located in a page.
+        Understanding the structure above allows a webpage to display items in the correct place on a webpage.
+      </p>
+      <table class="center">
+        <tr>
+          <th><span class="text-heading">Arrays and Objects; what they are and how they differ</span><br></th>
+        </tr>
+      </table>
+      <p>
+        <b><em>Arrays</em></b> and <b><em>Objects</em></b> in programming can be quite confusing, they may look very similar
+        in structure, behave in a very similar manners, but they are in fact quite different.
+        <br>
+        <br>
+        An <b><em>Array</em></b> in JavaScript is a single variable that is used to store different elements - <a
+          href="https://www.geeksforgeeks.org/arrays-in-javascript/#:~:text=In%20JavaScript%2C%20array%20is%20a,used%20to%20store%20different%20elements.&text=Unlike%20most%20languages%20where%20array,ways%20to%20declare%20an%20array.">GeeksforGeeks</a>.
+        <br>
+        <br>
+        An <b><em>Object</em></b> on the other hand "loosely speaking, may be defined as an unordered collection of related
+        data, of primitive or reference types, in the form of “key: value” pairs" - <a
+          href="https://www.geeksforgeeks.org/objects-in-javascript/">GeeksforGeeks</a>.<br>
+        <br>
+        The key difference between the two is the way data is accessed in both.
+        <br>
+        <br>
+        An <b><em>Array</em></b> uses a position to determine where an element is e.g.
+      </p>
+      <table class="center">
+        <tr>
+          <th></th>
+          <th><img class="pic-solo" src="../images/declare-an-array.png"
+              alt="Declaring an array code example using numbers"></th>
+          <th></th>
+        </tr>
+      </table>
+      <p>
+        Unlike humans a programme starts counting at 0 rather than 1. So as can be seen from the above element "one" is
+        located at position numbersArray[0].<br>
+        <br>
+        An <b><em>Object</em></b> on the other hand uses a unique identifier to locate an element called a
+        <em><b>propertyName</em></b> e.g.
+      </p>
+      <table class="center">
+        <tr>
+          <th><img class="pic-solo" src="../images/declare-an-object.png" alt="Declaring an object code example"></th>
+        </tr>
+      </table>
+      <p>
+        In the above example <b><em>numbers</em></b> has three properties. To find the correct property of an object a
+        programme needs to use one of its propertyName values to correctly identify the property as is seen on line 10 of
+        the code.
+      </p>
+      <br>
+      <table class="center">
+        <tr>
+          <th><span class="text-heading">Functions: what they are and why they are useful</span></th>
+        </tr>
+      </table>
+      <p>
+        A <b><em>Function</em></b> in JavaScript is a set of statements that take inputs, do some specific computation, and
+        produces output - <a href="https://www.geeksforgeeks.org/functions-in-javascript/">GeeksforGeeks</a>.<br>
+        They are useful because they are able to streamline repetative behaviour allowing reuse of code instead of repeating
+        it. ***See the <b><em>continueToEatBreakfast()</em></b> example above! They also have the ability to speed up
+        performance of webpages if implemented correctly.
+      </p>
+    </content>
+    <footer class="footer"><a href="../index.html">Home</a></footer>
+  </body>
 </html>
