@@ -47,7 +47,7 @@
           If we consider the HTML element to be the parent box on a webpage like the image above and everything else on the page lives within the HTML box and are "children" of the HTML element. To understand why positioning is important there is a need to understand that there are defaults that the webpage will automatically apply because HTML is being used.  These defaults need to be reset or "overridden" to position objects where you want to see them.  HTML elements are static by default and will remain that way unless their "position" is defined. The best way to define this positioning is in the CSS (Cascading Style Sheet).  
       </p>
       <p>
-          The first instruction I will try to explain is that of <span class="text-heading">"position: relative;"</span>.  The "relative" position of an element is the position of the element relative to where it would normally be located on the page. It is then moved (offset) relative to itself based on the values of top, bottom (vertical offset), right and left (horizontal offset). 
+          The first instruction I will try to explain is that of <q class="positioning-text">position: relative;</q>.  The "relative" position of an element is the position of the element relative to where it would normally be located on the page. It is then moved (offset) relative to itself based on the values of top, bottom (vertical offset), right and left (horizontal offset). 
           <br>
           One thing to note is the position is it always measured from the edge of one element to the edge or corner of another.  For example if we talk about a "top: 15px;" being defined then the top of the child object will be pushed down 15px from the edge of the parent object. In contrast if the "bottom: 30px;" is defined then the bottom of the object will be pushed up from the edge of the parent object.
           <br>
@@ -58,7 +58,7 @@
           </table>  
       </p> 
       <p> 
-          Setting the <span class="text-heading">"position: absolute;"</span> means the element is removed from the normal document flow of positioning elements on the page and its position is determined relative to the closest positioned parent or ancestor.  If an absolute positioned element has no positioned ancestors, it will use the document body, and will move with page scrolling.
+          Setting the <q class="positioning-text">position: absolute;</q> means the element is removed from the normal document flow of positioning elements on the page and its position is determined relative to the closest positioned parent or ancestor.  If an absolute positioned element has no positioned ancestors, it will use the document body, and will move with page scrolling.
           <br> 
           <table class="center">
             <tr>
@@ -67,7 +67,7 @@
           </table>  
       </p>
       <p>    
-          The <span class="text-heading">"position: fixed;"</span> is one that I have seen on many web pages and seems to be in fashion at the moment.  This means that the element does not move when the page is scrolled.  I can see there is a need to be careful of this as it can block other elements like links etc if it is not used carefully.
+          The <q class="positioning-text">position: fixed;</q> is one that I have seen on many web pages and seems to be in fashion at the moment.  This means that the element does not move when the page is scrolled.  I can see there is a need to be careful of this as it can block other elements like links etc if it is not used carefully.
           <br> 
           <table class="center">
             <tr>
