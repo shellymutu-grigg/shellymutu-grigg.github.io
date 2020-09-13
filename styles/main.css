@@ -18,37 +18,40 @@
 body, html{
   height: 100%;
   width: 100%;  
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 0;
   background-color: #fff;
-  word-wrap:break-word !important;
   scroll-behavior: smooth;
 }
  body {
-    margin: 0 auto;
-    display: flexbox;
     flex-flow: column;
     min-height: 100%;
+}
+h2, h3{
+  font-size: 2vw;
+}
+h3{
+  font-size: 1.5vw;
 }
 /*
   # Define unordered list styling 
 */
 ul{
     list-style-type: none;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: bold;
+    
 }
 /*
   # Define paragraph styling 
 */
 p{
-    padding: 10px 20%;
-    font-size: 1.1rem;
-    font-weight: 200;
-    line-height: 1.5;
+    padding: 1% 10%;
+    font-size: 1.3vw;
+    font-weight: 100;
+    line-height: 1.3;
     margin: 0;
     letter-spacing: 0.1rem;
-    text-align: left;
+    text-align: justify;
 }
 /*
   # Define navigation bar & children styling 
@@ -57,7 +60,7 @@ nav {
 	margin: 0px 0;
   background-color: #fff;
   position: fixed;
-  top: 0;
+  top: 0; 
   z-index: 9999;  
   width: 100%;
 }
@@ -66,7 +69,7 @@ nav ul {
   margin: 0;
 	list-style: none;
   position: relative;
-  background-blend-mode: overlay;
+  background-blend-mode: luminosity;
 }
 nav ul li {
 	display:inline-block;
@@ -77,9 +80,10 @@ nav a {
 	padding:0 10px;	
   color:#585858c5;
   text-shadow: 1px 0px #000;
-	font-size:20px;
+  font-size: 1.5vw;
   line-height: 50px;
   text-decoration:none;
+  text-align: center;
 }
 nav a:hover { 
   background-color: #bfc0c2; 
@@ -102,7 +106,7 @@ nav ul li:hover > ul {
 # Define first tier navigation bar dropdown styling
 */
 nav ul ul li {
-	width:200px;
+	width:auto;
 	float: none;
 	display:list-item;
   position: relative;
@@ -111,17 +115,18 @@ nav ul ul li {
 /* 
 # Define second navigation bar dropdown styling
 */
-nav ul ul ul li {
+/* nav ul ul ul li {
 	position: relative;
 	top:-50px; 
 	left:170px;
-}
+} */
 /* 
 # Define tables styling
 */
 table, td, th {
     border: none;
-    max-width: 100%;
+    max-width: 50%;
+    padding: 1% 10%;
   }
   
   table {
@@ -130,15 +135,20 @@ table, td, th {
     border-radius: 5%;
     align-self: center;
     empty-cells: show;
+    margin: 0;
   }
   
   th {
     max-height: 50%;
+    margin: 0;
     padding: 0;
     max-width: 50%;
     text-align: center;
     vertical-align: middle;
-    text-align: justify center;
+  }
+  .page-top{
+    position: fixed;
+    top: 0;
   }
 /* 
 # Define header class styling
@@ -146,18 +156,40 @@ table, td, th {
 .header{
   color: #fff;
   background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
-  height: 15%;
+  max-height: 20%;
+  min-height: 20%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  font-size: 200%;
-  text-shadow: 2px 2px 2px #000;
-  text-transform: uppercase;
   text-align: center;
-  padding-top: 5%;
+  display: block; 
+  max-width: 100%; 
+  overflow: hidden;
+  margin: 50px 0 0 0;
+  padding-top: 1.5%;
   padding-bottom: 3%;
-  position: relative;
+}
+
+.table, .td, .th {
+  border: none;
+}
+
+.table {
+  border-collapse: collapse;
+  align-self: center;
+  empty-cells: show;
+  margin: 0;
+}
+
+.th {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 /* 
 # Define content class styling
@@ -165,20 +197,19 @@ table, td, th {
 .content {
     align-items: center;
     text-align: center;
-    padding: 16px;
     background-color: #fff;
+    position: relative;
 }
 /* 
 # Define blog header class styling
 */
 .blog-header{
     color:  #585858c5;
-    padding-top: 1%;
-    padding-bottom: 0%;
     text-align: center;
     align-self: center;
-    font-size: 150%;
+    font-size: 2vw;
     font-weight: bolder;
+    padding: 0.8vw 0.3vw;
 }
 /* 
 # Define date class styling
@@ -189,17 +220,20 @@ table, td, th {
   padding-bottom: 2%;
   text-align: center;
   align-self: center;
-  font-size: 90%;
+  font-size: 1.5vw;
   font-weight: bolder;
 }
 /* 
 # Define header text class styling
 */
 .header-text{
-    position: relative;
-    top: -0.1em;
     text-align: center;
+    vertical-align: middle;
     align-self: center;
+    padding: 1.5vw 0;
+    font-size: 2vw;
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
 }
 /* 
 # Postion items in center of page
@@ -214,7 +248,15 @@ table, td, th {
 .text-heading{
   color: #585858c5;
   font-weight:bold; 
-  font-size: 150%;
+  font-size: 2vw;
+  text-align: center;
+  align-self: center;
+  padding-top: 1vw;
+}
+.positioning-text{
+  color: #585858c5;
+  font-weight:bold; 
+  font-size: 1.5vw;
   text-align: center;
   align-self: center;
 }
@@ -222,14 +264,14 @@ table, td, th {
 # Define table text class styling
 */
 .table-text{
-  text-align: center;
-  align-self: center;
-  font-weight: 600;
-  line-height: 20px;
-  font-size: 120%;
-  line-height: 1.5;
+  padding: 1% 10%;
+  font-size: 1.3vw;
+  font-weight: 200;
+  line-height: 1.3;
   margin: 0;
   letter-spacing: 0.1rem;
+  text-align: center;
+  word-wrap: break-word;
 }
 /* 
 # Define link text class styling
