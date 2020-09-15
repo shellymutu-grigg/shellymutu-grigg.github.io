@@ -18,7 +18,7 @@ function buildNavBar() {
         var html = [
             '<ul>',
                 '<li><a href="../index.html">Home</a>',
-                '<li><a href="#"id="top">Technical Blogs</a>',
+                '<li><a href="#">Technical Blogs</a>',
                 '<!-- First Tier Drop Down -->',
                     '<ul>', 
                         '<li><a href="sprint1-technical.html">Sprint 01 Technical</a></li>',
@@ -45,7 +45,7 @@ function buildNavBar() {
         var html = [
                 '<ul>',
                     '<li><a href="index.html">Home</a>',
-                    '<li><a href="#"id="top">Technical Blogs</a>',
+                    '<li><a href="#">Technical Blogs</a>',
                     '<!-- First Tier Drop Down -->',
                         '<ul>', 
                             '<li><a href="blog/sprint1-technical.html">Sprint 01 Technical</a></li>',
