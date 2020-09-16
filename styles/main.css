@@ -13,7 +13,7 @@
    /*border: 1px solid red;*/
 }
 /*
-  # Define overall body styling 
+  # Define overall styling 
 */
 body, html{
   height: 100%;
@@ -32,20 +32,18 @@ h2, h3{
 h3{
   font-size: 1.2vw;
 }
-/*
-  # Define unordered list styling 
-*/
+a{
+  font-size: 1.1vw;
+  font-weight: 100;
+}
 ul{
     list-style-type: none;
-    font-size: 100%;
     font-weight: bold;
-    
+    padding: 1.2vw 0;
+    vertical-align: middle;
 }
-/*
-  # Define paragraph styling 
-*/
 p{
-    padding: 1% 10%;
+    padding: 0.5vw 10vw;
     font-size: 1.1vw;
     font-weight: 100;
     line-height: 1.3;
@@ -53,9 +51,6 @@ p{
     letter-spacing: 0.1rem;
     text-align: justify;
 }
-/*
-  # Define navigation bar & children styling 
-*/
 nav {
 	margin: 0px 0;
   background-color: #fff;
@@ -65,7 +60,8 @@ nav {
   width: 100%;
 }
 nav ul {
-	padding: 0;
+  padding: 0.1vw 0.1vw;
+  line-height: 1.2vw;
   margin: 0;
 	list-style: none;
   position: relative;
@@ -77,13 +73,13 @@ nav ul li {
 }
 nav a {
 	display:block;
-	padding:0 10px;	
-  color:#585858c5;
-  text-shadow: 1px 0px #000;
-  font-size: 1.3vw;
-  line-height: 50px;
+	padding:0.1vw 0.3vw;	
+  color:#575763;
+  /* text-shadow: 1px 0px #000; */
+  font-size: 1.0vw;
+  line-height: 1.2vw;
   text-decoration:none;
-  text-align: center;
+  text-align: left;
 }
 nav a:hover { 
   background-color: #bfc0c2; 
@@ -94,7 +90,7 @@ nav a:hover {
 nav ul ul {
 	display: none;
 	position: absolute; 
-  top: 50px; /* the height of the main nav */
+  top: 1.2vw; /* the height of the main nav */
 }
 /* 
 # Display navigation bar dropdowns on hover 
@@ -110,6 +106,7 @@ nav ul ul li {
 	float: none;
 	display:list-item;
   position: relative;
+  padding:0.2vw 0.2vw;
   z-index: 9999;
 }
 /* 
@@ -126,7 +123,6 @@ nav ul ul li {
 table, td, th {
     border: none;
     max-width: 50%;
-    padding: 1% 10%;
   }
   
   table {
@@ -139,25 +135,21 @@ table, td, th {
   }
   
   th {
-    max-height: 50%;
     margin: 0;
-    padding: 0;
-    max-width: 50%;
+    padding: 0.5vw 10vw;
     text-align: center;
     vertical-align: middle;
-  }
-  .page-top{
-    position: fixed;
-    top: 0;
+    font-size: 1.1vw;
+    font-weight: 100;
   }
 /* 
 # Define header class styling
 */
 .header{
+  top: 0;
   color: #fff;
   background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
-  max-height: 20%;
-  min-height: 20%;
+  height: 15vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,9 +158,6 @@ table, td, th {
   display: block; 
   max-width: 100%; 
   overflow: hidden;
-  margin: 50px 0 0 0;
-  padding-top: 1.5%;
-  padding-bottom: 3%;
 }
 
 .table, .td, .th {
@@ -180,16 +169,14 @@ table, td, th {
   align-self: center;
   empty-cells: show;
   margin: 0;
+  padding: 0.5vw 10vw;
 }
 
 .th {
   margin: 0;
-  padding: 0;
   text-align: center;
   vertical-align: middle;
   text-align: center;
-  max-width: 100%;
-  max-height: 100%;
 }
 /* 
 # Define content class styling
@@ -216,15 +203,14 @@ table, td, th {
     align-self: center;
     font-size: 1.5vw;
     font-weight: bolder;
-    padding: 0.8vw 0.3vw;
+    padding: 0.8vw 0;
 }
 /* 
 # Define date class styling
 */
 .date{
   color:  #000;
-  padding-top: 0%;
-  padding-bottom: 2%;
+  padding: 1.0vw 0;
   text-align: center;
   align-self: center;
   font-size: 1.0vw;
@@ -234,15 +220,22 @@ table, td, th {
 # Define header text class styling
 */
 .header-text{
-    text-align: center;
-    vertical-align: middle;
-    align-self: center;
-    padding: 1.5vw 0;
-    font-size: 2.0vw;
-    text-shadow: 2px 2px 2px #000;
-    text-transform: uppercase;
+  top: 1.2vw;
+  padding: 7.5vw 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+  font-size: 2.0vw;
+  line-height: 2.0vw;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
 }
-
+.sub-heading-text{
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: none;
+  max-height: 1.5vw;
+}
 /* 
 # Define text header class styling
 */
@@ -252,7 +245,7 @@ table, td, th {
   font-size: 1.4vw;
   text-align: center;
   align-self: center;
-  padding-top: 1vw;
+  padding-top: 1vw 0;
 }
 .positioning-text{
   color: #585858c5;
@@ -265,10 +258,10 @@ table, td, th {
 # Define table text class styling
 */
 .table-text{
-  padding: 1% 10%;
+  padding: 0.5vw 10vw;
   font-size: 1.3vw;
   font-weight: 200;
-  line-height: 1.3;
+  line-height: 1.3vw;
   margin: 0;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -280,8 +273,8 @@ table, td, th {
 .link-text{
   text-align: center;
   align-self: center;
-  font-weight: 900;
-  font-size: 150%;
+  font-weight: 100;
+  font-size: 1.5vw;
   text-decoration: none;
 }
 /* 
@@ -290,8 +283,8 @@ table, td, th {
 .farewell-text{
   text-align: center;
   align-self: center;
-  font-weight: 600;
-  font-size: 150%;
+  font-weight: 200;
+  font-size: 1.5vw;
   text-decoration: none;
 }
 /* 
@@ -299,29 +292,15 @@ table, td, th {
 */
 .pic{
     object-fit: contain; 
-    padding: 1%;
-    max-height: 80%;
-    max-width: 80%;
-    height: 50%;
-    width: 60%;
-}
-/* 
-# Define pic-solo class styling
-*/
-.pic-solo{
-  object-fit: contain; 
-  padding: 2%;
-  max-height: 100%;
-  max-width: 100%;
-  height: 85%;
-  width: 80%;
+    height: 30vw;
+    width: 40vw;
 }
 /* 
 # Define footer class styling
 */
 .footer{
-  height: 5%;  
-  max-height: 5%;
+  height: 3vw;  
+  padding: 0.5vw 0;
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
@@ -329,7 +308,7 @@ table, td, th {
     text-decoration: none;
     color: #585858c5;
     font-weight:bold; 
-    font-size: 1.4vw;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
 }
@@ -354,6 +333,6 @@ table, td, th {
     text-decoration: none;
   }
   .footer a {
-    line-height: 30px;
+    line-height: 2vw;
   }
   
