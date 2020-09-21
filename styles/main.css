@@ -175,30 +175,23 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-/* 
-.wrap {
-  width: 600px;
-  height: 500px;
-  padding: 0;
-  overflow: hidden; 
-}
-.frame {
-  width: 600px;
-  height: 500px;
-  border: 0;
-  -ms-transform: scale(0.25);
-  -moz-transform: scale(0.25);
-  -o-transform: scale(0.25);
-  -webkit-transform: scale(0.25);
-  transform: scale(0.25);
-  
-  -ms-transform-origin: 0 0;
-  -moz-transform-origin: 0 0;
-  -o-transform-origin: 0 0;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-} 
-*/
+.index-page { 
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .index-page-table-left-cell{
+    padding-left: 8vw;
+    padding-right: 2vw;
+  }
+  .index-page-table-middle-cell{
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .index-page-table-right-cell{
+    padding-left: 2vw;
+    padding-right: 8vw;
+  }
+ 
 /* 
 # Define text class' styling
 */
