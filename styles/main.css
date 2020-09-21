@@ -180,16 +180,25 @@ nav {
   margin-right: auto;
   }
   .index-page-table-left-cell{
+    padding-top: 0.5vw;
     padding-left: 8vw;
     padding-right: 2vw;
+    padding-bottom: 1vw;
+    line-height: 1.1vw;
   }
   .index-page-table-middle-cell{
+    padding-top: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+    padding-bottom: 1vw;
+    line-height: 1.1vw;
   }
   .index-page-table-right-cell{
+    padding-top: 0.5vw;
     padding-left: 2vw;
     padding-right: 8vw;
+    padding-bottom: 1vw;
+    line-height: 1.1vw;
   }
  
 /* 
