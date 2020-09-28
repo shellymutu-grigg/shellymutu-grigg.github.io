@@ -15,16 +15,17 @@
 /*
   # Define overall styling for certain HTML elements
 */
-body, html{
+html{
   height: 100%;
   width: 100%;  
   margin: 0 0;
-  background-color: #fff;
-  scroll-behavior: smooth;
 }
  body {
-    flex-flow: column;
-    min-height: 100%;
+  flex-flow: column;
+  min-height: 100%;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  margin: 0 0;
 }
 h2, h3{
   font-size: 1.5vw;
@@ -109,6 +110,7 @@ nav {
     padding:0.2vw 0.2vw;
     z-index: 9999;
   }
+
   table, td, th {
     border: none;
     padding: 0.5vw 0;
@@ -135,7 +137,7 @@ nav {
       padding: 0.3vw 10vw ;
       text-align: center;
       vertical-align: middle;
-      font-size: 1.1vw;
+      font-size: 0.9vw;
       font-weight: 100;
       letter-spacing: 0.05rem;
     }
@@ -147,7 +149,10 @@ nav {
     top:-50px; 
     left:170px;
   } */
-
+img{
+  height: 10vw;
+  width: 10vw;
+}
 /* 
 # Define class styling
 */
@@ -162,7 +167,7 @@ nav {
   background-color: #fff;
   text-align: center;
   display: block; 
-  max-width: 100%; 
+  width: 100%; 
   overflow: hidden;
 }
 .content {
@@ -179,27 +184,27 @@ nav {
   margin-left: auto;
   margin-right: auto;
   }
-  .index-page-table-left-cell{
-    padding-top: 0.5vw;
-    padding-left: 8vw;
-    padding-right: 2vw;
-    padding-bottom: 1vw;
-    line-height: 1.1vw;
-  }
-  .index-page-table-middle-cell{
-    padding-top: 0.5vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-bottom: 1vw;
-    line-height: 1.1vw;
-  }
-  .index-page-table-right-cell{
-    padding-top: 0.5vw;
-    padding-left: 2vw;
-    padding-right: 8vw;
-    padding-bottom: 1vw;
-    line-height: 1.1vw;
-  }
+.index-page-table-left-cell{
+  padding-top: 0.5vw;
+  padding-left: 8vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
+.index-page-table-middle-cell{
+  padding-top: 0.5vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
+.index-page-table-right-cell{
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 8vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
  
 /* 
 # Define text class' styling
@@ -285,7 +290,6 @@ nav {
   width: 40vw;
   padding: 0.1vw 0 0.1vw 0;
 }
-
 .table-center{
   padding: 0vw 10vw
 }
@@ -293,17 +297,18 @@ nav {
 # Define footer class styling
 */
 .footer{
-  height: 2.5vw;  
-  position: -webkit-sticky;
+  height: 1.5vw;  
   position: sticky;
+  display: block;
   bottom: 0;
+  left: 50%;
   background-color: #fff;
   text-decoration: none;
   color: #585858c5;
   font-weight:bold; 
   font-size: 1.5vw;
   text-align: center;
-  vertical-align: middle;
+  padding-bottom: 0.4vw;
 }
   .footer a:link{
       color: #575763;
@@ -328,4 +333,41 @@ nav {
   .footer a {
     line-height: 1.5vw;
   }
+  .footer-index{
+    height: 1.5vw;  
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background-color: #fff;
+    text-decoration: none;
+    color: #585858c5;
+    font-weight:bold; 
+    font-size: 1.5vw;
+    text-align: center;
+    padding-bottom: 0.4vw;
+  }
+    .footer-index a:link{
+        color: #575763;
+        text-decoration: none;
+      }
+    
+    .footer-index a:visited{
+      color: #575763;
+      text-decoration: none;
+    }
+    
+    .footer-index a:hover{
+      color: #575763;
+      text-decoration: none;
+      background-color: #fff;
+    }
+    
+    .footer-index  a:active{
+      color: #575763;
+      text-decoration: none;
+    }
+    .footer-index a {
+      line-height: 1.5vw;
+    }
   
