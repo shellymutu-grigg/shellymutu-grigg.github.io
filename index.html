@@ -1,107 +1,153 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- 
-  # Index page for Technical and Cultural Blogs
-  # Demonstrates:
-  # 1. Set up a basic HTML page with the appropriate tags 
-  #    (html, head, title, etc.)
-  # 2. Add paragraphs, headings, links, images, lists, and/or 
-  #    tables
-  # 3. Divide content on a page using divs and spans
-  # 4. Link an external stylesheet to an html document
--->
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
-    <link href="styles/main.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/main.js"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<head>
+  <title>EDA work for Shelly Mutu-Grigg</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" >
+  <link href="./styles/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>EDA work for Shelly Mutu-Grigg</title>
-  </head>
+</head>
 <body>
   <div id="top"></div>
-  <nav id="navbar_home_id"></nav> 
-  <header class="header">
-    <div class="header-text">EDA work from Shelly Mutu-Grigg</div>
-    <div class="sub-heading-text">Ka mua, ka muri: ....walking backwards into the future</div>
-  </header>
-  <content class="content">
-    <br>
-    <p class="blog-header-text">Interesting work completed to date</p>
-    <br>
-    <table class="index-page">
-      <tr>
-        <th class="index-page-table-left-cell">
-          <a href="https://shellymutu-grigg.github.io/DOM-interactions/index.html">
-            <img src="images/game-board-in-the-DOM.png" alt="Dots Game Board in the DOM" width="70vw" height="70vw">
+  <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+    <a class="navbar-brand" href="#" >
+      <img src="images/logo.png" alt="UTUM Limited Logo" style="width: 30px; left: 105px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Technical Blogs
           </a>
-        </th>
-        <th class="index-page-table-middle-cell">
-          <a href="https://shellymutu-grigg.github.io/minesweeper/" >
-            <img src="images/covid-19_sweeper.png" alt="COVID-19 Sweeper Game" width="70vw" height="70vw">
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./blog/sprint1-technical.html">Sprint 01 Technical</a>
+            <a class="dropdown-item" href="./blog/sprint2-technical.html">Sprint 02 Technical</a>
+            <a class="dropdown-item" href="./blog/sprint3-technical.html">Sprint 03 Technical</a>
+            <a class="dropdown-item" href="./blog/sprint4-technical.html">Sprint 04 Technical</a>
+            <a class="dropdown-item" href="./blog/sprint5-technical.html">Sprint 05 Technical</a>
+          </div>
+        </li>   
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Cultural Blogs
           </a>
-        </th>
-        <th class="index-page-table-right-cell">
-          <a href="https://shellymutu-grigg.github.io/javascript-carnival/inflate-the-unicorn/inflate-the-unicorn.html">
-            <img src="images/inflate-the-unicorn.png" alt="Inflate the Unicorn Game" width="70vw" height="70vw"">
-          </a>
-      </tr>
-      <tr>
-        <th class="index-page-table-left-cell" ><br>Game Board in the DOM</th>
-        <th class="index-page-table-middle-cell"><br>COVID-19 sweeper</th>
-        <th class="index-page-table-right-cell"><br>Inflate the Unicorn Game</th>
-      </tr>
-      <tr>
-        <th class="index-page-table-left-cell" >
-          <a href="https://shellymutu-grigg.github.io/javascript-carnival/whack-a-mole/whack-a-mole.html">
-            <img src="images/whack-a-mole.png" alt="Whack A Mole Game" width="70vw" height="70vw">
-          </a>
-        </th>
-        <th class="index-page-table-middle-cell">
-          <a href="https://shellymutu-grigg.github.io/javascript-carnival/dress-the-clown/dress-the-clown.html">
-            <img src="images/dress-the-clown.png" alt="Dress the Clown Game" width="70vw" height="70vw">
-          </a>
-        </th>
-        <th class="index-page-table-right-cell">
-          <a href="https://shellymutu-grigg.github.io/calculator/index.html">
-            <img src="images/calculator.png" alt="calculator" width="70vw" height="70vw">
-          </a>
-        </th>
-      </tr>
-      <tr>
-        <th class="index-page-table-left-cell" ><br>Whack A Mole Game</th>
-        <th class="index-page-table-middle-cell"><br>Dress the Clown Game</th>
-        <th class="index-page-table-right-cell"><br>Electronic Calculator</th>
-      </tr>
-      <tr>
-        <th class="index-page-table-left-cell">
-          <a href="">
-            <div width="70vw" height="70vw"></div>
-          </a>
-        </th>
-        <th class="index-page-table-middle-cell">
-          <a href="">
-            <img src="images/what-is-next.png" alt="...what is next?" width="70vw" height="70vw">
-          </a>
-        </th>
-        <th class="index-page-table-right-cell">
-          <a href="">
-            <div width="70vw" height="70vw"></div>
-          </a>
-        </th>
-      </tr>
-      <tr>
-        <th class="index-page-table-left-cell" ><br></th>
-        <th class="index-page-table-middle-cell"><br>...what is next?</th>
-        <th class="index-page-table-right-cell"><br></th>
-      </tr>
-    </table>
-  </content>
-  <footer class="footer-index"><a href="#top">Top of page</a></footer>
-  </body>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./blog/sprint1-cultural.html">Sprint 01 Cultural</a>
+            <a class="dropdown-item" href="./blog/sprint2-cultural.html">Sprint 02 Cultural</a>
+            <a class="dropdown-item" href="./blog/sprint3-cultural.html">Sprint 03 Cultural</a>
+            <a class="dropdown-item" href="./blog/sprint4-cultural.html">Sprint 04 Cultural</a>
+            <a class="dropdown-item" href="./blog/sprint5-cultural.html">Sprint 05 Cultural</a>
+          </div>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> 
+      </ul>
+    </div>  
+  </nav> 
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid" >
+    <h2 class="display-4" style="text-align: center; color: aliceblue; text-shadow: 2px 2px 2px #000; ">EDA work from Shelly Mutu-Grigg</h2>
+    <p class="lead"style="text-align: center;color: aliceblue; text-shadow: 2px 2px 2px #000;">Ka mua, ka muri: ....walking backwards into the future</p>
+  </div>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col d-flex justify-content-center"></div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/game-board-in-the-DOM.png" alt="Game Board in the DOM">
+          <div class="card-body">
+            <h5 class="card-title">Game Board in the DOM</h5>
+            <p class="card-text">Checkout a fun dot game demonstrating the magic of the DOM!</p>
+            <a href="https://shellymutu-grigg.github.io/DOM-interactions/index.html" class="btn btn-primary">Try it out!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/covid-19_sweeper.png" alt="COVID-19 Sweeper">
+          <div class="card-body">
+            <h5 class="card-title">COVID-19 Sweeper</h5>
+            <p class="card-text">Have a go at getting rid of that pesky COVID-19. Make sure you wash your hands!</p>
+            <a href="https://shellymutu-grigg.github.io/minesweeper/" class="btn btn-primary">Have a go!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/inflate-the-unicorn.png" alt="Inflate the Unicorn">
+          <div class="card-body">
+            <h5 class="card-title">Inflate the Unicorn</h5>
+            <p class="card-text">Help out Larry, Curly & Moe with inflating their horns</p>
+            <a href="https://shellymutu-grigg.github.io/javascript-carnival/inflate-the-unicorn/inflate-the-unicorn.html" class="btn btn-primary">Help the unicorns!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center"></div>
+    </div>  
+    <div class="row mt-5">
+      <div class="col d-flex justify-content-center"></div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/whack-a-mole.png" alt="Whack A Mole">
+          <div class="card-body">
+            <h5 class="card-title">Whack A Mole</h5>
+            <p class="card-text">Can you out-fox the mole and beat the high score?</p>
+            <a href="https://shellymutu-grigg.github.io/javascript-carnival/whack-a-mole/whack-a-mole.html" class="btn btn-primary">Boing!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="images/dress-the-clown.png" alt="Dress the clown">
+          <div class="card-body">
+            <h5 class="card-title">Dress the clown</h5>
+            <p class="card-text">Help out the clown get ready for his show...or not</p>
+            <a href="https://shellymutu-grigg.github.io/javascript-carnival/dress-the-clown/dress-the-clown.html" class="btn btn-primary">Dress the clown!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top .img-thumbnail" src="images/calculator.png" alt="Calculator">
+          <div class="card-body">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text">Use this electronic calculator to try out your times tables</p>
+            <a href="https://shellymutu-grigg.github.io/calculator/index.html" class="btn btn-primary">Mathematics in action!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center"></div>
+    </div>
+    <div class="row mt-5"></div>
+    <div class="row mt-5"></div>
+    <div class="row mt-5"></div>
+  </div>
+  <nav class="navbar justify-content-center navbar-expand-md bg-white navbar-light fixed-bottom">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">Top of page</a>
+      </li>
+    </ul>  
+  </nav>
+</body>
 </html>

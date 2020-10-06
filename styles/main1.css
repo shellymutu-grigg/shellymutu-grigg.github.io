@@ -1,0 +1,373 @@
+/*
+  # Linked CSS file for setting styling of linked pages
+  # Includes:
+  # 1. Position elements using CSS
+  # 2. Modify element style (size, color, etc) using CSS
+  # 3. Compare and use classes and ids to manipulate elements
+*/
+*{
+  font-family: 'Oxygen', sans-serif;  
+   /*
+   # Used to diagnose where issues with white space were 
+   */
+   /*border: 1px solid red;*/
+}
+/*
+  # Define overall styling for certain HTML elements
+*/
+html{
+  height: 100%;
+  width: 100%;  
+  margin: 0 0;
+}
+ body {
+  flex-flow: column;
+  min-height: 100%;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  margin: 0 0;
+}
+h2, h3{
+  font-size: 1.5vw;
+}
+h3{
+  font-size: 1.2vw;
+}
+a{
+  font-size: 1.1vw;
+  font-weight: 100;
+}
+ul{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 1.2vw 0;
+    vertical-align: middle;
+}
+p{
+    padding: 0.5vw 10vw;
+    font-size: 1.1vw;
+    
+    line-height: 1.3vw;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+}
+nav {
+	margin: 0px 0;
+  background-color: #fff;
+  position: fixed;
+  top: 0; 
+  z-index: 9999;  
+  width: 100%;
+}
+  nav ul {
+    padding: 0.1vw 0.1vw;
+    line-height: 1.2vw;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    background-blend-mode: luminosity;
+  }
+  nav ul li {
+    display:inline-block;
+    background-color: #fff;
+  }
+  nav a {
+    display:block;
+    padding:0.1vw 0.3vw;	
+    color:#575763;
+    /* text-shadow: 1px 0px #000; */
+    font-size: 1.0vw;
+    line-height: 1.2vw;
+    text-decoration:none;
+    text-align: left;
+  }
+  nav a:hover { 
+    background-color: #bfc0c2; 
+  }
+  /* 
+  # Hide navigation bar dropdowns by default 
+  */
+  nav ul ul {
+    display: none;
+    position: absolute; 
+    top: 1.2vw; /* the height of the main nav */
+  }
+  /* 
+  # Display navigation bar dropdowns on hover 
+  */
+  nav ul li:hover > ul {
+    display:inherit;
+  }	
+  /* 
+  # Define first tier navigation bar dropdown styling
+  */
+  nav ul ul li {
+    width:auto;
+    float: none;
+    display:list-item;
+    position: relative;
+    padding:0.2vw 0.2vw;
+    z-index: 9999;
+  }
+
+  table, td, th {
+    border: none;
+    padding: 0.5vw 0;
+    
+  }
+    table {
+      border-collapse: collapse;
+      max-width: 100%;
+      border-radius: 5%;
+      align-self: center;
+      empty-cells: show;
+      margin: 0;
+    }
+    tr {
+      padding: 3vw 10vw;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1.4vw;
+      font-size: 1.1vw;
+      font-weight: 100;
+      width: auto;
+    }
+    th {
+      padding: 0.3vw 10vw ;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 0.9vw;
+      font-weight: 100;
+      letter-spacing: 0.05rem;
+    }
+  /* 
+  # Define second navigation bar dropdown styling
+  */
+  /* nav ul ul ul li {
+    position: relative;
+    top:-50px; 
+    left:170px;
+  } */
+img{
+  height: 10vw;
+  width: 10vw;
+}
+/* 
+# Define class styling
+*/
+.header{
+  top: 0;
+  color: #fff;
+  background-image: url("../images/bantersnaps-KP-19H9w2lo-unsplash.jpg");
+  height: 15vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  text-align: center;
+  display: block; 
+  width: 100%; 
+  overflow: hidden;
+}
+.content {
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.index-page { 
+  margin-left: auto;
+  margin-right: auto;
+  }
+.index-page-table-left-cell{
+  padding-top: 0.5vw;
+  padding-left: 8vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
+.index-page-table-middle-cell{
+  padding-top: 0.5vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
+.index-page-table-right-cell{
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+  padding-right: 8vw;
+  padding-bottom: 1vw;
+  line-height: 1.1vw;
+}
+ 
+/* 
+# Define text class' styling
+*/
+.header-text{
+  top: 1.2vw;
+  padding: 7.5vw 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  align-self: center;
+  font-size: 2.0vw;
+  line-height: 2.0vw;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
+}
+.sub-heading-text{
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: none;
+  max-height: 1.5vw;
+}
+.date-text{
+  color:  #000;
+  padding: 1.0vw 0;
+  text-align: center;
+  align-self: center;
+  font-size: 1.0vw;
+  font-weight: bolder;
+}
+.blog-header-text{
+  color:  #585858c5;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  padding: 0.8vw 0;
+}
+.heading-text{
+  color: #585858c5;
+  font-weight:bold; 
+  font-size: 1.6vw;
+  text-align: center;
+  align-self: center;
+  padding-top: 1vw 0;
+}
+.positioning-text{
+  color: #585858c5;
+  font-weight:bold; 
+  font-size: 1.25vw;
+  text-align: center;
+  align-self: center;
+}
+.table-text{
+  padding: 0vw 0vw;
+  font-size: 1.2vw;
+  font-weight: 150;
+  line-height: 1.4vw;
+  margin: 0;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+.link-text{
+  text-align: center;
+  align-self: center;
+  font-weight: 100;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.farewell-text{
+  text-align: center;
+  align-self: center;
+  font-weight: 200;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+/* 
+# Define pic class styling
+*/
+.pic{
+  object-fit: contain;
+  height: 25vw;
+  width: 40vw;
+  padding: 0.1vw 0 0.1vw 0;
+}
+.table-center{
+  padding: 0vw 10vw
+}
+/* 
+# Define footer class styling
+*/
+.footer{
+  height: 1.5vw;  
+  position: sticky;
+  display: block;
+  bottom: 0;
+  left: 50%;
+  background-color: #fff;
+  text-decoration: none;
+  color: #585858c5;
+  font-weight:bold; 
+  font-size: 1.5vw;
+  text-align: center;
+  padding-bottom: 0.4vw;
+}
+  .footer a:link{
+      color: #575763;
+      text-decoration: none;
+    }
+  
+  .footer a:visited{
+    color: #575763;
+    text-decoration: none;
+  }
+  
+  .footer a:hover{
+    color: #575763;
+    text-decoration: none;
+    background-color: #fff;
+  }
+  
+  .footer  a:active{
+    color: #575763;
+    text-decoration: none;
+  }
+  .footer a {
+    line-height: 1.5vw;
+  }
+  .footer-index{
+    height: 1.5vw;  
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background-color: #fff;
+    text-decoration: none;
+    color: #585858c5;
+    font-weight:bold; 
+    font-size: 1.5vw;
+    text-align: center;
+    padding-bottom: 0.4vw;
+  }
+    .footer-index a:link{
+        color: #575763;
+        text-decoration: none;
+      }
+    
+    .footer-index a:visited{
+      color: #575763;
+      text-decoration: none;
+    }
+    
+    .footer-index a:hover{
+      color: #575763;
+      text-decoration: none;
+      background-color: #fff;
+    }
+    
+    .footer-index  a:active{
+      color: #575763;
+      text-decoration: none;
+    }
+    .footer-index a {
+      line-height: 1.5vw;
+    }
+  
