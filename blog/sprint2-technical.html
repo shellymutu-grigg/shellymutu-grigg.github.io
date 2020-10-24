@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- 
-  # Sprint 01 Technical Blog page
+  # Technical Blog
   # Demonstrates:
   # 1. Set up a basic HTML page with the appropriate tags 
   #    (html, head, title, etc.)
@@ -68,74 +68,68 @@
     </div>  
   </nav> 
   <br>
+  <br>
+  <br>
   <br> 
-  <header class="header">
-    <div class="header-text">Investigating the differences between relative, absolute, and fixed positioning in CSS</div>
-  </header>
-  <content class="content">
-    <p class="blog-header-text">Sprint-02 Technical Blog</p>
-    <p class="date-text"><b>03<sup>rd</sup> September 2020</b></p>
-    <p>
-      One of the things I found difficult with the Sprint 02 challenges was having content where I wanted it to appear on a webpage, particularly if the webpage was resized.  I had real trouble with this especially with items overlaping each other and links being unable to be accessed as they were "blocked" by another object.  As such I decided to investigate positioning.  After researching this topic, I am itching to re-write parts of my pages to incorporate it - as it is now making sense!   
-    </p>
-    <p>
-      The first concept that really helped me was one that is covered well in the Udacity Tutorials about the concept of everything on a webpage being a "box" and having lots of boxes within boxes (even circles are boxes!).  The second concept to help me in my understanding of positioning was the concept of parent and child objects.  A child object (or "element") lives within a parent object and will be positioned according to what the properties of the parent object are.
-      <table class="center">
-        <tr>
-          <th><img class="pic" src="../images/parent-child-box.png" alt="Parent with child boxes"></th>
-        </tr>
-      </table>
-    </p>
-    <p>
-      If we consider the HTML element to be the parent box on a webpage like the image above and everything else on the page lives within the HTML box and are "children" of the HTML element. To understand why positioning is important there is a need to understand that there are defaults that the webpage will automatically apply because HTML is being used.  These defaults need to be reset or "overridden" to position objects where you want to see them.  HTML elements are static by default and will remain that way unless their "position" is defined. The best way to define this positioning is in the CSS (Cascading Style Sheet).  
-    </p>
-    <p>
-      The first instruction I will try to explain is that of <q class="positioning-text">position: relative;</q>.  The "relative" position of an element is the position of the element relative to where it would normally be located on the page. It is then moved (offset) relative to itself based on the values of top, bottom (vertical offset), right and left (horizontal offset). 
-      <br>
-      One thing to note is the position is it always measured from the edge of one element to the edge or corner of another.  For example if we talk about a "top: 15px;" being defined then the top of the child object will be pushed down 15px from the edge of the parent object. In contrast if the "bottom: 30px;" is defined then the bottom of the object will be pushed up from the edge of the parent object.
-      <br>
-      <table class="center">
-        <tr>
-          <th><img class="pic"src="../images/relative-pic-all.png" alt="Relatively positioned objects"></th>
-        </tr>
-      </table>  
-    </p> 
-    <p> 
-      Setting the <q class="positioning-text">position: absolute;</q> means the element is removed from the normal document flow of positioning elements on the page and its position is determined relative to the closest positioned parent or ancestor.  If an absolute positioned element has no positioned ancestors, it will use the document body, and will move with page scrolling.
-      <br> 
-      <table class="center">
-        <tr>
-          <th><img class="pic"src="../images/absolute-pic-all.png" alt="Absolute positioned objects"></th>
-        </tr>
-      </table>  
-    </p>
-    <p>    
-      The <q class="positioning-text">position: fixed;</q> is one that I have seen on many web pages and seems to be in fashion at the moment.  This means that the element does not move when the page is scrolled.  I can see there is a need to be careful of this as it can block other elements like links etc if it is not used carefully.
-      <br> 
-      <table class="center">
-        <tr>
-          <th><img class="pic"src="../images/fixed-pic-all.png" alt="Fixed positioned objects"></th>
-        </tr>
-      </table>       
-      </p>
-      <table class="center">
-        <tr>
-          <th><span style="color: #585858c5;font-weight: bold;">References:</span></th>
-        </tr>
-        <tr>
-          <th>1. <a href="https://webplatform.github.io/docs/tutorials/CSS_absolute_and_fixed_positioning/#:~:text=Whereas%20the%20position%20and%20dimensions,or%20the%20paper's%20page%20box." style="text-decoration: none;">GitHub Article</a></th>
-        </tr>
-        <tr>
-          <th>2. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning" style="text-decoration: none;">Mozilla Article</a></th>
-        </tr>
-        <tr>
-          <th>3. <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" style="text-decoration: none;">CSS Tricks Article</a></th>
-        </tr>
-        <tr>
-          <th>4. <a href="https://www.w3schools.com/css/css_positioning.asp" style="text-decoration: none;">W3Schools Article</a></th>
-        </tr>
-      </table>
-  </content>
+  <div class="container-fluid" >
+    <h2 class="display-4" style="text-align: center; color: #ffffff; text-shadow: 2px 2px 2px #000; ">Investigating the differences between relative, absolute, and fixed positioning in CSS</h2>
+    <p class="lead"style="text-align: center;color: aliceblue; text-shadow: 2px 2px 2px #000;">Sprint-02 Technical Blog</p>
+    <p class="lead"style="text-align: center;color: aliceblue; text-shadow: 2px 2px 2px #000;"><b>03<sup>rd</sup> September 2020</b></p>  
+  </div>
+  <div class="container-fluid">
+    <div class="row mt-5">
+      <div class="col-sm-2 d-flex justify-content-center"></div>
+      <div class="col-sm-8 d-flex justify-content-center">
+        <div class="jumbotron" style="background-color: #ffffff;">
+          <p>
+            One of the things I found difficult with the Sprint 02 challenges was having content where I wanted it to appear on a webpage, particularly if the webpage was resized.  I had real trouble with this especially with items overlaping each other and links being unable to be accessed as they were "blocked" by another object.  As such I decided to investigate positioning.  After researching this topic, I am itching to re-write parts of my pages to incorporate it - as it is now making sense!   
+          </p>
+          <p>
+            A concept that really helped me was one that is covered well in the Udacity Tutorials about the concept of everything on a webpage being a "box" and having lots of boxes within boxes (even circles are boxes!).  The second concept to help me in my understanding of positioning was the concept of parent and child objects.  A child object (or "element") lives within a parent object and will be positioned according to what the properties of the parent object are.
+          </p>
+          <img class="mx-auto d-block .img-fluid" src="../images/parent-child-box.png" alt="Parent with child boxes" > 
+          <p>
+            If we consider the HTML element to be the parent box on a webpage like the image above and everything else on the page lives within the HTML box and are "children" of the HTML element. To understand why positioning is important there is a need to understand that there are defaults that the webpage will automatically apply because HTML is being used.  These defaults need to be reset or "overridden" to position objects where you want to see them.  HTML elements are static by default and will remain that way unless their "position" is defined. The best way to define this positioning is in the CSS (Cascading Style Sheet).  
+          </p>
+          <p>
+            The first instruction I will try to explain is that of <q style="color: #585858c5;font-weight: bold;">position: relative;</q>.  The "relative" position of an element is the position of the element relative to where it would normally be located on the page. It is then moved (offset) relative to itself based on the values of top, bottom (vertical offset), right and left (horizontal offset). 
+          </p>
+          <p>
+            One thing to note is the position is it always measured from the edge of one element to the edge or corner of another.  For example if we talk about a "top: 15px;" being defined then the top of the child object will be pushed down 15px from the edge of the parent object. In contrast if the "bottom: 30px;" is defined then the bottom of the object will be pushed up from the edge of the parent object.
+          </p>
+          <img class="mx-auto d-block" src="../images/relative-pic-all.png" alt="Relatively positioned objects" height="400" width="600"> 
+          <p>
+            Setting the <q class="positioning-text">position: absolute;</q> means the element is removed from the normal document flow of positioning elements on the page and its position is determined relative to the closest positioned parent or ancestor.  If an absolute positioned element has no positioned ancestors, it will use the document body, and will move with page scrolling.
+          </p> 
+          <img class="mx-auto d-block" src="../images/absolute-pic-all.png" alt="Absolute positioned objects" height="400" width="600"> 
+          <p>
+            The <q style="color: #585858c5;font-weight: bold;">position: fixed;</q> is one that I have seen on many web pages and seems to be in fashion at the moment.  This means that the element does not move when the page is scrolled.  I can see there is a need to be careful of this as it can block other elements like links etc if it is not used carefully.
+          </p>
+          <p>
+          <span style="color: #585858c5;font-weight: bold;">References:</span>
+          <br>
+          1. <a href="https://webplatform.github.io/docs/tutorials/CSS_absolute_and_fixed_positioning/#:~:text=Whereas%20the%20position%20and%20dimensions,or%20the%20paper's%20page%20box." style="text-decoration: none;">GitHub Article</a>
+          <br>
+          2. <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning" style="text-decoration: none;">Mozilla Article</a>
+          <br>
+          3. <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/" style="text-decoration: none;">CSS Tricks Article</a>
+          <br>
+          4. <a href="https://www.w3schools.com/css/css_positioning.asp" style="text-decoration: none;">W3Schools Article</a>
+          </p>
+          <br>
+          <br> 
+        </div>
+      </div>
+      <div class="col-sm-2 d-flex justify-content-center"></div>
+    </div> 
+  </div>   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
   <nav class="navbar justify-content-center navbar-expand-md bg-white navbar-light fixed-bottom">
     <ul class="navbar-nav">
       <li class="nav-item">
