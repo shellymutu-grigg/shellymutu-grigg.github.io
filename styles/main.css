@@ -77,9 +77,6 @@ body {
     font-size: 3.5vw;
     top: 15vw;
   }
-  .jumbotron {
-    padding: 0 0;
-  }
   .card-img-top {
     width: 100%;
     height: 40vw;
@@ -101,9 +98,6 @@ body {
     font-size: 3.5vw;
     top: 15vw;
   }
-  .jumbotron {
-    padding: 0 0;
-  }
  }
 
 /* Medium devices (tablets, less than 992px) */
@@ -119,9 +113,6 @@ body {
   .sub-heading-text{
     font-size: 1.5vw;
     top: 4vw;
-  }
-  .jumbotron {
-    padding: 0 0;
   }
 }
 
@@ -139,9 +130,6 @@ body {
     font-size: 1.5vw;
     top: 4vw;
   }
-  .jumbotron {
-    padding: 0 0;
-  }
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -157,8 +145,5 @@ body {
   .sub-heading-text{
     font-size: 1.5vw;
     top: 4vw;
-  }
-  .jumbotron {
-    padding: 0 0;
   }
 }
